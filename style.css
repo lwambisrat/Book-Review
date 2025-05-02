@@ -233,12 +233,12 @@
         }
         .description{
             border-radius: 60px;
-         
             display: flex;
             gap: 10%;
             width: 120vh;
             background-color: #2c3e50;
             height: 70vh;
+           
         }
        
         #noah {
@@ -278,6 +278,8 @@
             width: 130%;
             height: 60vh;
             margin-top: 95px;
+        
+          
         } 
         .personal{
             background-color: #f7e4d4;
@@ -285,7 +287,7 @@
             height: 85%;
             border-radius: 15px;
             box-shadow: 6px 5px 7px ;
-            margin-top: 3%;
+            margin-top: 4%;
             margin-left: 2%;
             padding-left: 60px;
             padding-right: 1cqmax;
@@ -328,14 +330,17 @@
             padding-top: 2%;
             padding-bottom: 1%;
         }
+    
         .reflection{
            width: 70vh;
            padding-right: 2%;
            padding-top: 2%;
            padding-left: 2%; 
-           background-color: rgb(167, 158, 158);
+           background-color: #f7e4d4;
            box-shadow: 5px 5px 9px rgb(26, 19, 19);
            position: static;
+           font-size: 20px;
+           line-height: 30px;
            border-radius: 0 30px 30px 0;
 
         }
@@ -533,6 +538,27 @@
         .like-btn:hover {
             color: #e74c3c;
         }
+        
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
         footer {
             background-color: #2c3e50;
             color: #ecf0f1;
@@ -543,8 +569,10 @@
             display: flex;
             gap: 8%;
         }
-        .contact-info p{
+        #link a{
             margin-top: 9%;
+            text-decoration: none;
+            color: rgb(231, 229, 229);
          
         }
     
@@ -563,10 +591,7 @@
             text-decoration: none;
             color: white;
         }
-        .contact-info p{
-            color: white;
-
-        }
+        
         .footer-content {
             max-width: 1200px;
             height: 20vh;
@@ -660,6 +685,7 @@
            
             .nav-links {
                 margin-top: 1rem;
+                animation: fadeInUp 1s ease-out 0.3s forwards;
             }
            
             .nav-links li {
