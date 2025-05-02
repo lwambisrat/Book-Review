@@ -12,8 +12,6 @@
             color: #333;
             line-height: 1.6;
         }
-       
-        /* Navigation Bar */
         nav {
             background-color: #2c3e50;
             padding: 1rem 2rem;
@@ -31,36 +29,43 @@
             margin: 0 auto;
         }
        
-        .logo {
+        .small-book {
             color: #ecf0f1;
             font-size: 1.8rem;
             transition: transform 0.3s ease;
         }
        
-        .logo:hover {
+        .small-book:hover {
             transform: scale(1.05);
         }
        
         .nav-links {
             display: flex;
             list-style: none;
+            
         }
        
         .nav-links li {
             margin-left: 2rem;
+            background-color:rgb(248, 230, 68); 
+            border-radius: 9cqb;
+   
+         
         }
        
         .nav-links a {
-            color: #ecf0f1;
+            color:black;;
             text-decoration: none;
             font-size: 1.1rem;
+         
             padding: 0.5rem 1rem;
-            border-radius: 4px;
             transition: all 0.3s ease;
         }
        
         .nav-links a:hover {
-            background-color: #34495e;
+            background-color: #292825;
+            border-radius: 9cqb;
+            height: 80%;
             transform: translateY(-3px);
         }
         header {
@@ -83,7 +88,7 @@
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
             transform: translateY(20px);
             opacity: 0;
-            animation: fadeInUp 1s forwards 0.5s;
+            animation: fadeInUp 1s forwards 0.9s;
         }
        
         header p {
@@ -243,13 +248,15 @@
             border-radius: 60px;
         }
         .blog{
+            width: 50%;
+            margin-left: -8%;
             border: solid gray;
             color: white;
             margin-top: 140px;
             padding-left: 45px;
             padding-right: 10px;
             padding-top: 55px;
-            height: 30vh;
+            height: 40vh;
           
             
         }
@@ -263,14 +270,14 @@
           font-size: 220%;
         }
         .rename{
-            border: solid ;
+          box-shadow: 6px 8px 8px gray;
             position: static;
             display: flex;
             gap: 15%;
             margin-left: -15%;
             width: 130%;
             height: 60vh;
-            margin-top: 80px;
+            margin-top: 95px;
         } 
         .personal{
             background-color: #f7e4d4;
@@ -288,8 +295,9 @@
 
         } 
         .picture-noah img{
-            width: 55vh;
+            width: 50vh;
             height: 60vh;
+            margin-left: -10%;
             padding-top: 29px;
             border-radius: 15%;
             padding-bottom: 7%;
@@ -300,10 +308,8 @@
             padding-top: 7%;
             padding-left: 4%;
             padding-bottom: 2%;
-            /* border: solid gray; */
             box-shadow: 19px 15px 13px rgb(117, 116, 116);
             margin-left:-10% ;
-            margin-top: 8%;
             position: static;
             width:150vh;
         }
@@ -319,8 +325,8 @@
             margin-top: 5%;
             border-bottom: solid;
             border-top: solid;
-            padding-top: 3%;
-            padding-bottom: 3%;
+            padding-top: 2%;
+            padding-bottom: 1%;
         }
         .reflection{
            width: 70vh;
@@ -333,33 +339,6 @@
            border-radius: 0 30px 30px 0;
 
         }
-            /* max-width: 800px; */
-            /* margin: 2rem auto;
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            /* height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            transform: perspective(1000px) rotateX(5deg);
-            transition: transform 0.5s ease; */
-        */
-       
-        /* .video-container:hover {
-            transform: perspective(1000px) rotateX(0deg) scale(1.02);
-        }
-/*         */
-        /* .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        } */ */
-
-      
-        /* Newsletter */
         .newsletter {
            
             border-radius: 8px;
@@ -379,6 +358,7 @@
         }
        
         .newsletter p {
+            text-align: center;
             max-width: 600px;
             margin: 0 auto 2rem;
             color: #555;
@@ -403,6 +383,7 @@
         .newsletter-form button {
             background-color: #e74c3c;
             color: white;
+          
             border: none;
             padding: 0 2rem;
             border-radius: 0 30px 30px 0;
@@ -413,10 +394,13 @@
         .newsletter-form button:hover {
             background-color: #c0392b;
         }
+        button a{
+            text-decoration: none;
+            color:white;
+        }
         .comments-section {
             margin-left: 25%;
             width: 100vh;
-            /* margin: 4rem 0; */
             background-color:silver;
             border-radius: 8px;
             box-shadow: 19px 15px 15px black;
@@ -575,13 +559,20 @@
         #lwam P{
         margin-left: 8%;
         }
-       
+        .fa-info-circle{
+            text-decoration: none;
+            color: white;
+        }
+        .contact-info p{
+            color: white;
+
+        }
         .footer-content {
             max-width: 1200px;
+            height: 20vh;
             margin: 0 auto;
            display: flex;
             gap: 10rem;
-            /* margin-left: 40%; */
             text-align: left;
         }
        
@@ -652,7 +643,6 @@
             color: #bdc3c7;
         }
        
-        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -663,10 +653,6 @@
                 transform: translateY(0);
             }
         }
-       
-/* Comment Section Styles */
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
