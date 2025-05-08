@@ -680,7 +680,10 @@
         }
         @media (max-width: 768px) {
             .nav-container {
-                flex-direction: column;
+                /* /* flex-direction: column; * */
+                display: inline;
+                gap: 1px;
+                margin-left: 1px;
             }
            
             .nav-links {
@@ -689,10 +692,60 @@
             }
            
             .nav-links li {
-                margin-left: 1rem;
+                margin-left: 1.1rem;
                 margin-right: 1rem;
             }
-           
+            .description{
+                flex-direction: column;
+                width: 100vw;
+                height: 100vh;
+                margin-left:-25px;
+            }
+            .blog{
+                margin-top:-40%;
+                width: 40vh;
+                height: 50%;
+                padding-top: 10px;
+                margin-left: 15px;
+                color: black;
+            }
+            #noah{
+                width: 80vw;
+                height: 80%;
+                margin-left: 19px;
+            }
+            .rename{
+                gap: 1px;
+                flex-direction: column;
+                width: 47vh;
+                height: 130vh;
+                margin-top: 2%;
+            }
+        .picture-noah{
+            margin-top: -2%;
+            width: 40vh;
+            margin-left: 9px;
+        }
+        .personal-blog{
+            flex-direction: column;
+            width: 10%;
+        }
+        .reflection{
+            width: 45vh;
+        }
+        #grass{
+            margin-left: -42px;
+            width: 50vh;
+        }
+        .comments-section{
+            width: 100%;
+            margin-left: 1px;
+        }
+          .footer-content{
+            height: 90vh;
+            gap: 1px;
+            flex-direction: column;
+          } 
             header h1 {
                 font-size: 2.5rem;
             }
